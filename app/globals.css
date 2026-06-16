@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-primary: #b0ad05;
+  --color-secondary: #C5A059;
+  --color-accent: #2E7D32;
+  --color-accent-foreground: #FFFFFF;
+
+  /* Typography Fonts */
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Global Border Radius Defaults */
+  --radius-lg: 1rem;
+  --radius-md: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+/* Base resets & overflow containment */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FDF9F4; /* Warm white background */
+  color: #b0b027;            /* Deep text color */
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Corporate layout global class for safe screen boundaries */
+.container-corporate {
+  width: 100%;
+  max-w: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .container-corporate {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-corporate {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-corporate {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
