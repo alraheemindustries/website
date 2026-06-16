@@ -22,7 +22,7 @@ export const Hero = () => {
     playsInline
     className="absolute inset-0 w-full h-full object-cover z-0"
   >
-    <source src="/images/herovideo.mp4" type="video/mp4" />
+    <source src="https://drive.google.com/file/d/1vjRBICLcF0A9rn4T1picxAlS43T3oiGB/view?usp=sharing" type="video/mp4" />
   </video>
 </div>
       {/* FIXED CONTAINER: Pinned inside strict screen limits */}
