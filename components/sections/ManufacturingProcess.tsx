@@ -82,11 +82,14 @@ export const ManufacturingProcess = () => {
               <div className="relative z-10 w-full">
                 {/* 📸 IMAGE CONTAINER WITH CORNER HOVER EFFECTS */}
                 <div className="w-full h-48 rounded-xl overflow-hidden mb-6 relative border border-white/5 bg-white/[0.02]">
-                  <img 
-                    src={step.image} 
+                  <Image
+                    src={step.image}
                     alt={step.title}
+                    width={800}
+                    height={600}
                     className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700 ease-in-out"
                     loading="lazy"
+                    priority={false}
                   />
                   {/* Subtle dark gradient overlay over image */}
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-60" />

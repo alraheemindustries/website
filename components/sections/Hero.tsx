@@ -20,7 +20,9 @@ export const Hero = () => {
     loop
     muted
     playsInline
+    preload="metadata"
     className="absolute inset-0 w-full h-full object-cover z-0"
+    style={{ visibility: 'visible' }}
   >
     <source src="/images/herovideo.mp4" type="video/mp4" />
   </video>
