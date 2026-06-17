@@ -5,6 +5,7 @@ import { motion, Variants } from "framer-motion";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { ContactCTA } from "@/components/sections/ContactCTA";
 import { Shield, Target, Eye, Building2, Award, Zap, Heart } from "lucide-react";
+import Image from "next/image";
 
 // Strict type cast for Framer Motion transitions
 const fadeInUpVariant: Variants = {
