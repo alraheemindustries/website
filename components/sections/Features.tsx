@@ -43,7 +43,7 @@ const features = [
     title: "Trusted Export Network",
     description: "Supplying premium Oil & Ghee to major global markets with a focus on reliability and speed.",
     icon: Globe,
-    video: "/images/vedio6.mp4",
+    video: "https://drive.google.com/file/d/1bYzQxUdn9n7Qu3Z9xCnj0qq_EgC0XqSY/view?usp=sharing",
   },
   {
     title: "Seamless Supply Chain",
