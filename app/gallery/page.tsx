@@ -8,37 +8,37 @@ import Image from "next/image";
 
 const images = [
   { 
-    src: "/images/products.jpeg",  
+    src: "/images/products.webp",  
     cols: "md:col-span-2", 
     rows: "md:row-span-2" 
   },
   { 
-    src: "/images/gallery2.jpeg", 
+    src: "/images/gallery2.webp", 
     cols: "md:col-span-1", 
     rows: "md:row-span-1" 
   },
   { 
-    src: "/images/ManufacturingProcess4.png",
+    src: "/images/ManufacturingProcess4.webp",
     cols: "md:col-span-1", 
     rows: "md:row-span-1" 
   },
   { 
-    src: "/images/gallery4.jpg",
+    src: "/images/gallery4.webp",
     cols: "md:col-span-1", 
     rows: "md:row-span-2" 
   },
   { 
-    src: "/images/gallery5.jpg", 
+    src: "/images/gallery5.webp", 
     cols: "md:col-span-2", 
     rows: "md:row-span-1" 
   },
   { 
-    src: "/images/gallery6.jpg",
+    src: "/images/gallery6.webp",
     cols: "md:col-span-1", 
     rows: "md:row-span-1" 
   },
   { 
-    src: "/images/gllery7.jpg", 
+    src: "/images/gllery7.webp", 
   
     cols: "md:col-span-1", 
     rows: "md:row-span-1" 

@@ -22,19 +22,19 @@ const products = [
     id: 1,
     title: "Premium Banaspati Ghee",
     category: "Banaspati Ghee", // Ye category match honi chahiye catalog wali list se
-    image: "/images/product ghee.jpeg",
+    image: "/images/product ghee.webp",
   },
   {
     id: 2,
     title: "Cooking Oil",
     category: "Cooking Oils",
-    image: "/images/product oil.jpeg",
+    image: "/images/product oil.webp",
   },
   {
     id: 3,
     title: "Industrial Grade Oils",
     category: "B2B Solutions",
-    image: "/images/industrial grade.jpeg",
+    image: "/images/industrial grade.webp",
   },
 ];
 

@@ -44,7 +44,7 @@ export const Navbar = () => {
         {/* Brand Logo Wrapper - Pure transparent and fixed width dimensions */}
         <Link href="/" className="flex items-center group relative z-20">
           <Image
-            src="/images/logo.png"
+            src="/images/logo.webp"
             alt="Al Raheem Industries"
             width={160} // Next.js standard strict requirements fixed here
             height={48} // Aspect ratio safe boundary dimensions

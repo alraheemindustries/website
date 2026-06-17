@@ -45,13 +45,18 @@ const AnimatedCounter = ({
 
   return <span ref={ref}>{count}{suffix}</span>;
 };
-// className="h-16 md:h-20 lg:h-24"
 
 export const Stats = () => {
   return (
-    <section className="py-24 md:py-32 bg-white border-y h-16 md:h-20 lg:h-24 border-gray-100">
+    <section className="py-16 md:py-24 bg-white border-y border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+        {/* 
+          Responsive Grid:
+          - Mobile: 1 column (grid-cols-1)
+          - Tablet (sm): 2 columns (sm:grid-cols-2)
+          - Desktop (lg): 4 columns (lg:grid-cols-4)
+        */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-12">
           {stats.map((stat, idx) => (
             <motion.div
               key={idx}
@@ -59,12 +64,12 @@ export const Stats = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               viewport={{ once: true }}
-              className="text-center"
+              className="text-center px-4 py-6 rounded-2xl hover:bg-gray-50 transition-colors duration-300"
             >
-              <h3 className="text-4xl md:text-5xl font-bold text-primary mb-3">
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-2 sm:mb-3">
                 <AnimatedCounter target={stat.value} suffix={stat.suffix} />
               </h3>
-              <p className="text-gray-500 text-sm font-medium uppercase tracking-wide">
+              <p className="text-gray-500 text-xs sm:text-sm font-medium uppercase tracking-wider">
                 {stat.label}
               </p>
             </motion.div>

@@ -63,7 +63,7 @@ export const Footer = () => {
             <Link href="/" className="flex items-center space-x-3 group w-max">
               <div className="relative w-12 h-12 flex items-center justify-center transition-transform duration-300 group-hover:scale-105 drop-shadow-sm">
                 <Image 
-                  src="/images/logo.png" 
+                  src="/images/logo.webp" 
                   alt="Al Raheem Industries Logo" 
                   width={48} 
                   height={48}

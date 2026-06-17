@@ -10,25 +10,25 @@ const steps = [
     number: "01",
     title: "Raw Material Selection",
     description: "We source premium quality seeds and crude oils from globally certified sustainable farms.",
-    image: "/images/ManufacturingProcess1.png",
+    image: "/images/ManufacturingProcess1.webp",
   },
   {
     number: "02",
     title: "Multi-Stage Refining",
     description: "Using advanced physical refining to remove impurities while preserving natural nutrients and aroma.",
-    image: "/images/ManufacturingProcess2.png",
+    image: "/images/ManufacturingProcess2.webp",
   },
   {
     number: "03",
     title: "Fractionation & Blending",
     description: "Precision temperature control and blending to achieve the perfect consistency for Banaspati and Oils.",
-    image: "/images/ManufacturingProcess3.png",
+    image: "/images/ManufacturingProcess3.webp",
   },
   {
     number: "04",
     title: "Hygienic Packaging",
     description: "Automated, zero-touch packaging in a controlled environment to ensure zero contamination.",
-    image: "/images/ManufacturingProcess4.png",
+    image: "/images/ManufacturingProcess4.webp",
   },
 ];
 

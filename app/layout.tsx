@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   
   // Strict priority bindings for icon rendering
   icons: {
-    icon: "/images/logo.png",
-    shortcut: "/images/logo.png",
-    apple: "/images/logo.png",
+    icon: "/images/logo.webp",
+    shortcut: "/images/logo.webp",
+    apple: "/images/logo.webp",
   },
 
   openGraph: {

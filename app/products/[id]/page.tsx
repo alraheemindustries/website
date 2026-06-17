@@ -16,7 +16,7 @@ const products = [
     id: 1,
     title: "Sooraj Cooking Oil",
     category: "Cooking Oils",
-    image: "/images/product oil.jpeg",
+    image: "/images/product oil.webp",
     description: "Premium quality cooking oil refined for purity, lightness, and great taste. Ideal for frying, cooking, and everyday healthy meals.",
     longDescription: "Sooraj Cooking Oil is manufactured using advanced physical refining technology to ensure maximum purity and nutritional retention. This versatile cooking oil is perfect for all types of Pakistani and continental cuisines, offering a perfect balance of health and taste. Our oil is carefully processed to maintain essential nutrients while providing excellent frying performance.",
     specs: {
@@ -35,7 +35,7 @@ const products = [
     id: 2,
     title: "Reydhan Banaspati Ghee",
     category: "Banaspati Ghee",
-    image: "/images/reydhan ghee.jpeg",
+    image: "/images/reydhan ghee.webp",
     description: "Pure and authentic banaspati ghee crafted with traditional methods for rich flavor and aroma.",
     longDescription: "Reydhan Banaspati Ghee is produced using premium quality vegetable oils through a specialized hydrogenation process that creates the perfect grainy texture. Enriched with Vitamins A and D, this ghee provides the authentic taste and aroma essential for traditional Pakistani cooking, biryanis, and sweets.",
     specs: {
@@ -54,7 +54,7 @@ const products = [
     id: 3,
     title: "Reydhan Cooking Oil",
     category: "Cooking Oils",
-    image: "/images/reydhan oil.jpeg",
+    image: "/images/reydhan oil.webp",
     description: "Premium cooking oil for everyday use. Complete nourishment for healthy cooking.",
     longDescription: "Reydhan Cooking Oil is a premium quality, physically refined oil that offers excellent heat stability and a neutral taste profile. Perfect for deep frying, shallow frying, and all general cooking applications. This oil is enriched with essential fatty acids and Vitamin E for a healthier lifestyle.",
     specs: {
@@ -73,7 +73,7 @@ const products = [
     id: 4,
     title: "Sooraj Banaspati Ghee",
     category: "Banaspati Ghee",
-    image: "/images/product ghee.jpeg",
+    image: "/images/product ghee.webp",
     description: "The beginning of taste and quality. Premium banaspati ghee for traditional cooking and baking.",
     longDescription: "Sooraj Banaspati Ghee is crafted with utmost care using the finest vegetable oils. Our unique manufacturing process ensures the perfect grainy texture and rich flavor that is essential for authentic Pakistani cuisine. Ideal for making traditional sweets, biryanis, and everyday cooking.",
     specs: {
