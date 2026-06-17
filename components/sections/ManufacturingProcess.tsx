@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { animations } from "@/lib/utils";
+import Image from "next/image";
 
 const steps = [
   {
