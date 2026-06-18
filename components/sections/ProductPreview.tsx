@@ -21,7 +21,7 @@ const products = [
   {
     id: 1,
     title: "Premium Banaspati Ghee",
-    category: "Banaspati Ghee", // Ye category match honi chahiye catalog wali list se
+    category: "Banaspati Ghee",
     image: "/images/product ghee.webp",
   },
   {
@@ -40,7 +40,8 @@ const products = [
 
 export const ProductPreview = () => {
   return (
-    <section className="py-16 md:py-24 bg-gray-50 w-full max-w-[100vw] overflow-x-hidden block">
+    // ✅ YAHAN ID ADD KARO
+    <section id="products" className="py-16 md:py-24 bg-gray-50 w-full max-w-[100vw] overflow-x-hidden block">
       <div className="w-full max-w-[1400px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 flex flex-col ">
         
         {/* Upper Info Row */}
@@ -106,7 +107,6 @@ export const ProductPreview = () => {
                 </h3>
                 
                 <div>
-                  {/* Dynamic Link: Ye click hone par products page par category filter laga dega */}
                   <Link 
                     href={`/products?category=${encodeURIComponent(product.category)}`}
                     className="inline-flex items-center text-white/80 font-bold uppercase tracking-widest text-[10px] group-hover:text-accent transition-colors duration-300"

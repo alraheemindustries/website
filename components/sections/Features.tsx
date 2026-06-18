@@ -19,37 +19,37 @@ const features = [
     title: "International Quality Standards",
     description: "Our manufacturing processes are ISO 22000 and HACCP certified, ensuring the highest food safety levels.",
     icon: ShieldCheck,
-    video: "/images/vedio1.mp4", 
+    video: "/videos/video1.mp4", 
   },
   {
     title: "100% Pure Ingredients",
     description: "We source the finest natural seeds and raw materials to ensure nutrient-rich, healthy products.",
     icon: Leaf,
-    video: "/images/vedio2.mp4",
+    video: "/videos/video2.mp4",
   },
   {
     title: "Modern Refining Technology",
     description: "State-of-the-art physical and chemical refining pipelines to maintain natural aroma and purity.",
     icon: FlaskConical,
-    video: "/images/vedio3.mp4",
+    video: "/videos/video3.mp4",
   },
   {
     title: "Eco-Friendly Production",
     description: "Sustainable manufacturing practices with minimal environmental impact and zero waste initiatives.",
     icon: Leaf,
-    video: "/images/vedio4.mp4",
+    video: "/videos/video4.mp4",
   },
   {
     title: "Trusted Export Network",
     description: "Supplying premium Oil & Ghee to major global markets with a focus on reliability and speed.",
     icon: Globe,
-    video: "/images/vedio6.mp4",
+    video: "/videos/video6.mp4",
   },
   {
     title: "Seamless Supply Chain",
     description: "Advanced logistics and storage infrastructure ensuring fresh product delivery to every distributor.",
     icon: Truck,
-    video: "/images/vedio5.mp4",
+    video: "/videos/video5.mp4",
   },
 ];
 

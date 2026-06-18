@@ -6,27 +6,31 @@ import { ArrowRight, ShieldCheck, Droplet } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 export const Hero = () => {
+  const scrollToProducts = () => {
+    document.getElementById('products')?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  };
+
   return (
-    <section className="relative min-h-screen w-full  flex items-center pt-32 pb-20 overflow-hidden bg-white">
-      {/* Background with sophisticated overlay */}
+    <section className="relative min-h-screen w-full flex items-center pt-32 pb-20 overflow-hidden bg-white">
       {/* Background with video - No yellow, light effect */}
-<div className="absolute inset-0 z-0 overflow-hidden">
-  {/* Dark/Light overlay - light effect ke liye */}
-  <div className="absolute inset-0 bg-black/30 z-10" />
-  
-  {/* Background Video */}
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    preload="metadata"
-    className="absolute inset-0 w-full h-full object-cover z-0"
-    style={{ visibility: 'visible' }}
-  >
-    <source src="/images/herovideo.mp4" type="video/mp4" />
-  </video>
-</div>
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute inset-0 bg-black/30 z-10" />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          style={{ visibility: 'visible' }}
+        >
+          <source src="/videos/HeroSectionVideo.mp4" type="video/mp4" />
+        </video>
+      </div>
+      
       {/* FIXED CONTAINER: Pinned inside strict screen limits */}
       <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-12 md:px-16 lg:px-24 relative z-20">
         <div className="max-w-4xl">
@@ -75,7 +79,12 @@ export const Hero = () => {
             className="flex flex-col sm:flex-row items-stretch sm:items-center gap-6 sm:gap-8"
           >
             <div className="flex">
-              <Button variant="gold" size="lg" className="group w-full sm:w-auto px-8 md:px-10 py-6 rounded-full shadow-2xl shadow-accent/20 text-sm md:text-base font-bold flex items-center justify-center">
+              <Button
+                variant="gold" 
+                size="lg" 
+                className="group w-full sm:w-auto px-8 md:px-10 py-6 rounded-full shadow-2xl shadow-accent/20 text-sm md:text-base font-bold flex items-center justify-center"
+                onClick={scrollToProducts}  // ✅ Function call sahi hai
+              >
                 Explore Our Range
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={18} />
               </Button>
@@ -105,7 +114,7 @@ export const Hero = () => {
       {/* Corporate Vertical Floating Text */}
       <div className="absolute right-10 top-1/2 -translate-y-1/2 hidden xl:block pointer-events-none z-10">
         <span className="text-[120px] font-black text-white/[0.02] uppercase tracking-tighter vertical-text select-none block rotate-90 origin-right whitespace-nowrap">
-          ESTABLISHED 1995
+          ESTABLISHED 1982
         </span>
       </div>
 

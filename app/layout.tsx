@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
+import { BackToTop } from "@/components//ui/BackToTop";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -56,6 +58,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <BackToTop/>
       </body>
     </html>
   );

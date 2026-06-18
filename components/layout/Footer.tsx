@@ -81,7 +81,7 @@ export const Footer = () => {
               </div>
             </Link>
             <p className="text-slate-800 font-medium text-sm leading-relaxed max-w-xs">
-              Leading the industrial landscape with innovation, precision, and a commitment to excellence since 1995.
+              Leading the industrial landscape with innovation, precision, and a commitment to excellence since 1982.
             </p>
             <div className="flex items-center space-x-3 pt-2">
   {/* ✅ Facebook */}
@@ -136,7 +136,7 @@ export const Footer = () => {
               <li className="flex items-start space-x-3.5">
                 <MapPin className="text-emerald-900 shrink-0 mt-0.5" size={18} />
                 <span className="text-slate-800 font-medium text-sm leading-relaxed">
-                  Plot no. 196 north western industrial zone, Port Qasim,<br />Karachi, Pakistan
+                 PLOT 204C PHASE 8 AL MURTAZA COM LAN-3 DEFENCE, Karachi, Pakistan
                 </span>
               </li>
               <li className="flex items-center space-x-3.5">

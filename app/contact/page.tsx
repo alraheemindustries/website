@@ -2,11 +2,10 @@
 
 import React, { useState, useEffect } from "react";
 import { PageHeader } from "@/components/sections/PageHeader";
-import { Mail, Phone, MapPin, Clock, Send, ChevronDown } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Send, ChevronDown, Building2, MapPinned, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Contact() {
-  // Form State Configuration mapping with Route API
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -134,56 +133,129 @@ export default function Contact() {
                 </p>
               </div>
               
-              <div className="space-y-8">
+              <div className="space-y-6">
                 {/* Headquarters */}
-                <div className="flex items-start space-x-5">
-                  <div className="w-12 h-12 bg-[#f4f6ec] border border-[#e2e7cd] rounded-full flex items-center justify-center text-[#859728] shrink-0">
-                    <MapPin size={20} />
+                <motion.div 
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  className="flex items-start space-x-5 p-4 rounded-2xl bg-[#f8faf7] border border-[#e8eee4] hover:border-[#859728] transition-colors duration-300"
+                >
+                  <div className="w-12 h-12 bg-[#256428]/10 rounded-full flex items-center justify-center text-[#256428] shrink-0">
+                    <Building2 size={20} />
                   </div>
                   <div>
-                    <h4 className="font-heading font-bold text-lg text-[#859728] mb-1">Headquarters</h4>
-                    <p className="text-slate-500 text-sm leading-relaxed">Plot no. 196 north western industrial zone, Port Qasim, Karachi,<br />Karachi, 75020, Pakistan</p>
+                    <h4 className="font-heading font-bold text-base text-[#859728] mb-0.5">🏢 Head office</h4>
+                    <p className="text-slate-500 text-sm leading-relaxed">PLOT 204C PHASE 8 AL MURTAZA COM LAN-3 DEFENCE</p>
+                    {/* Google Maps Button */}
+                    <a 
+                      href="https://maps.app.goo.gl/zSjoNyUBQQWT2ppGA?g_st=iwb"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-medium text-[#256428] hover:text-[#1d4f20] mt-2 transition-colors group"
+                    >
+                      <span>View on Google Maps</span>
+                      <ExternalLink size={12} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </a>
                   </div>
-                </div>
+                </motion.div>
+                
+                {/* mill */}
+                <motion.div 
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="flex items-start space-x-5 p-4 rounded-2xl bg-[#f8faf7] border border-[#e8eee4] hover:border-[#859728] transition-colors duration-300"
+                >
+                  <div className="w-12 h-12 bg-[#859728]/10 rounded-full flex items-center justify-center text-[#859728] shrink-0">
+                    <MapPinned size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-heading font-bold text-base text-[#859728] mb-0.5"> 📍Manufacturing Unit</h4>
+                    <p className="text-slate-500 text-sm leading-relaxed">Plot no. E96 north western industrial zone, <br />Port Qasim, Karachi, 75020, Pakistan</p>
+                    {/* Google Maps Button */}
+                    <a 
+                      href="https://maps.app.goo.gl/YrJ4CEDHeDTMuPJy5?g_st=iwb"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-medium text-[#256428] hover:text-[#1d4f20] mt-2 transition-colors group"
+                    >
+                      <span>View on Google Maps</span>
+                      <ExternalLink size={12} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </a>
+                  </div>
+                </motion.div>
                 
                 {/* Phone */}
-                <div className="flex items-start space-x-5">
+                <motion.div 
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                  className="flex items-start space-x-5 p-4 rounded-2xl bg-[#f8faf7] border border-[#e8eee4] hover:border-[#859728] transition-colors duration-300"
+                >
                   <div className="w-12 h-12 bg-[#ecf4ec] border border-[#cde2cd] rounded-full flex items-center justify-center text-[#256428] shrink-0">
                     <Phone size={20} />
                   </div>
                   <div>
-                    <h4 className="font-heading font-bold text-lg text-[#859728] mb-1">Phone</h4>
-                    <p className="text-slate-500 text-sm leading-relaxed">+92 3218232432</p>
-                    <p className="text-slate-500 text-sm leading-relaxed">+92 3018232432</p>
-                    <p className="text-slate-500 text-sm leading-relaxed">+92 3180014845</p>
+                    <h4 className="font-heading font-bold text-base text-[#859728] mb-0.5">📞 Phone</h4>
+                    <p className="text-slate-500 text-sm leading-relaxed">
+                      <a href="tel:+923218232432" className="hover:text-[#256428] transition-colors">+92 3218232432</a>
+                    </p>
+                    <p className="text-slate-500 text-sm leading-relaxed">
+                      <a href="tel:+923018232432" className="hover:text-[#256428] transition-colors">+92 3018232432</a>
+                    </p>
+                    <p className="text-slate-500 text-sm leading-relaxed">
+                      <a href="tel:+923180014845" className="hover:text-[#256428] transition-colors">+92 3180014845</a>
+                    </p>
                   </div>
-                </div>
+                </motion.div>
                 
                 {/* Email */}
-                <div className="flex items-start space-x-5">
+                <motion.div 
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                  className="flex items-start space-x-5 p-4 rounded-2xl bg-[#f8faf7] border border-[#e8eee4] hover:border-[#859728] transition-colors duration-300"
+                >
                   <div className="w-12 h-12 bg-[#fdf8ec] border border-[#f9ecd2] rounded-full flex items-center justify-center text-[#b45309] shrink-0">
                     <Mail size={20} />
                   </div>
                   <div>
-                    <h4 className="font-heading font-bold text-lg text-[#859728] mb-1">Email</h4>
-                    <p className="text-slate-500 text-sm leading-relaxed">hello.alraheemindustries@gmail.com</p>
+                    <h4 className="font-heading font-bold text-base text-[#859728] mb-0.5">📧 Email</h4>
+                    <a 
+                      href="mailto:hello.alraheemindustries@gmail.com"
+                      className="text-slate-500 text-sm leading-relaxed hover:text-[#256428] transition-colors"
+                    >
+                      hello.alraheemindustries@gmail.com
+                    </a>
                   </div>
-                </div>
+                </motion.div>
                 
                 {/* Working Hours */}
-                <div className="flex items-start space-x-5">
+                <motion.div 
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                  className="flex items-start space-x-5 p-4 rounded-2xl bg-[#f8faf7] border border-[#e8eee4] hover:border-[#859728] transition-colors duration-300"
+                >
                   <div className="w-12 h-12 bg-slate-50 border border-slate-100 rounded-full flex items-center justify-center text-slate-400 shrink-0">
                     <Clock size={20} />
                   </div>
                   <div>
-                    <h4 className="font-heading font-bold text-lg text-[#859728] mb-1">Working Hours</h4>
-                    <p className="text-slate-500 text-sm leading-relaxed">24/7 — We're Here</p>
-                  </div>
-                </div>
+  <h4 className="font-heading font-bold text-base text-[#859728] mb-0.5">
+    🕐 Working Hours
+  </h4>
+  <p className="text-slate-500 text-sm leading-relaxed">
+    Mon - Sat: 9:00 AM - 5:00 PM
+    <br />
+    Sunday: Closed
+  </p>
+</div>
+                </motion.div>
               </div>
             </div>
             
-            {/* Right Column: Matched Clean Shadow Form Card */}
+            {/* Right Column: Form */}
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -306,7 +378,6 @@ export default function Contact() {
                   {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}
                 </div>
                 
-                {/* Fixed Button: Standard HTML button used to avoid variant props error */}
                 <button 
                   type="submit"
                   disabled={isSubmitting}
@@ -330,17 +401,49 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map Segment Frame */}
-      <section className="h-[500px] w-full bg-gray-200 grayscale hover:grayscale-0 transition-all duration-700">
-        <iframe 
-          src="https://maps.google.com/maps?q=Port%20Qasim,%20Karachi&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-          width="100%" 
-          height="100%" 
-          style={{ border: 0 }} 
-          allowFullScreen={true} 
-          loading="lazy" 
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+      {/* Quick Contact Bar - Instead of Map */}
+      <section className="py-12 bg-[#256428]">
+        <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-12 md:px-16 lg:px-24">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <motion.a
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              href="tel:+923218232432"
+              className="group bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/30 transition-all duration-300"
+            >
+              <Phone className="w-8 h-8 text-white/70 group-hover:text-white mx-auto mb-3 transition-colors" />
+              <p className="text-white/80 group-hover:text-white text-sm font-medium transition-colors">Call Us Now</p>
+              <p className="text-white font-bold text-lg mt-1">+92 321 8232432</p>
+            </motion.a>
+
+            <motion.a
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              href="mailto:hello.alraheemindustries@gmail.com"
+              className="group bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/30 transition-all duration-300"
+            >
+              <Mail className="w-8 h-8 text-white/70 group-hover:text-white mx-auto mb-3 transition-colors" />
+              <p className="text-white/80 group-hover:text-white text-sm font-medium transition-colors">Email Us</p>
+              <p className="text-white font-bold text-lg mt-1 truncate">hello.alraheemindustries@gmail.com</p>
+            </motion.a>
+
+            <motion.a
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              href="https://maps.app.goo.gl/YrJ4CEDHeDTMuPJy5?g_st=iwb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/30 transition-all duration-300"
+            >
+              <MapPin className="w-8 h-8 text-white/70 group-hover:text-white mx-auto mb-3 transition-colors" />
+              <p className="text-white/80 group-hover:text-white text-sm font-medium transition-colors">Find Us</p>
+              <p className="text-white font-bold text-lg mt-1">View on Google Maps</p>
+            </motion.a>
+          </div>
+        </div>
       </section>
     </>
   );
