@@ -26,9 +26,15 @@ const images = [
     cols: "md:col-span-1", 
     rows: "md:row-span-1" 
   },
+  { 
+    src: "/images/gallery12.webp",
+    cols: "md:col-span-1", 
+    rows: "md:row-span-1" 
+  },
+
   // BAQI 8 IMAGES
   { 
-    src: "/images/products.webp",
+    src: "/images/gallery1.webp",
     cols: "md:col-span-2", 
     rows: "md:row-span-2" 
   },
@@ -37,6 +43,12 @@ const images = [
     cols: "md:col-span-1", 
     rows: "md:row-span-1" 
   },
+  { 
+    src: "/images/gallery3.webp",
+    cols: "md:col-span-1", 
+    rows: "md:row-span-1" 
+  },
+
   { 
     src: "/images/ManufacturingImages/ManufacturingProcess4-new.webp",
     cols: "md:col-span-1", 
@@ -88,7 +100,7 @@ export default function Gallery() {
               >
                 <Image 
                   src={img.src} 
-                  alt="Gallery Image"
+                  alt={`Gallery Image ${img.src}`}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
