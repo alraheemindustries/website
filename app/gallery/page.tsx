@@ -70,7 +70,7 @@ const images = [
     rows: "md:row-span-1" 
   },
   { 
-    src: "/images/gllery7.webp",
+    src: "/images/gallery7.webp",
     cols: "md:col-span-1", 
     rows: "md:row-span-1" 
   },
